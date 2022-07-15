@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "jonwood2/guardian-php-sdk",
+    "description": "A PHP SDK to work with The Guardian",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "jonwood2",
+        "guardian-php-sdk"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/jonwood2/guardian-php-sdk",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "jonwood2",
+            "email": "jonwood2@googlemail.com",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Jonwood2\\GuardianPhpSdk\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Jonwood2\\GuardianPhpSdk\\Tests\\": "tests"
         }
     },
     "scripts": {
