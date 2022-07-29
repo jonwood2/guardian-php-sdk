@@ -3,17 +3,15 @@
 namespace Jonwood2\GuardianPhpSdk;
 
 use Exception;
+use GuzzleHttp\Client;
 use Jonwood2\GuardianPhpSdk\Exceptions\FailedActionException;
 use Jonwood2\GuardianPhpSdk\Exceptions\NotFoundException;
 use Jonwood2\GuardianPhpSdk\Exceptions\UnauthorizedException;
 use Jonwood2\GuardianPhpSdk\Exceptions\ValidationException;
 use Psr\Http\Message\ResponseInterface;
-use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Request;
 
 class BaseAPIClient
 {
-
     /** @var string */
     public string $apiToken = "";
 
@@ -23,7 +21,6 @@ class BaseAPIClient
 
     public function __construct()
     {
-
         $this->client = new Client();
 
 

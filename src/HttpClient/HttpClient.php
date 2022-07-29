@@ -2,12 +2,11 @@
 
 namespace Jonwood2\GuardianPhpSdk\HttpClient;
 
-use Jonwood2\GuardianPhpSdk\Traits\MakesHttpRequests;
 use GuzzleHttp\Client;
+use Jonwood2\GuardianPhpSdk\Traits\MakesHttpRequests;
 
 class HttpClient
 {
-
     use MakesHttpRequests;
 
     /** @var string */
@@ -45,5 +44,4 @@ class HttpClient
             return new $class($attributes, $this);
         }, $collection);
     }
-    
 }

@@ -4,12 +4,11 @@ namespace Jonwood2\GuardianPhpSdk\Service;
 
 class AccountService extends AbstractService
 {
-
     public function login($username, $password)
     {
         return $this->client->post('accounts/login', [
             'username' => $username,
-            'password' => $password
+            'password' => $password,
         ]);
     }
 
@@ -17,7 +16,7 @@ class AccountService extends AbstractService
     {
         return $this->client->post('accounts', [
             'username' => $username,
-            'password' => $password
+            'password' => $password,
         ]);
     }
 }

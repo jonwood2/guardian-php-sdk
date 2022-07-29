@@ -14,14 +14,11 @@ class ServiceFactory extends AbstractServiceFactory
      */
     private static array $classMap = [];
 
-
     public function __construct($client)
     {
         $this->client = $client;
         self::$classMap = $this->importServicesFromConfig();
-        
     }
-
 
     /**
      *
@@ -33,16 +30,14 @@ class ServiceFactory extends AbstractServiceFactory
         return array_key_exists($name, self::$classMap) ? self::$classMap[$name] : null;
     }
 
-
     /**
      *
      * @return array<string, string>
      */
     public function importServicesFromConfig()
     {
-         return (include('./config/app.php'))['services'];
+        return (include('./config/app.php'))['services'];
     }
-
 
     /**
      * @param string $name
@@ -60,5 +55,4 @@ class ServiceFactory extends AbstractServiceFactory
 
         return null;
     }
-
 }

@@ -30,8 +30,7 @@ abstract class AbstractServiceFactory
         $serviceClass = $this->getServiceClass($name);
 
         if ($serviceClass !== null) {
-
-            if (!array_key_exists($name, $this->services)) {
+            if (! array_key_exists($name, $this->services)) {
                 $this->services[$name] = new $serviceClass($this->client);
             }
 
